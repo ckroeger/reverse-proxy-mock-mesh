@@ -1,0 +1,20 @@
+GET http://localhost:8091/example-1/test
+
+
+GET http://localhost:8091/__admin/mappings
+
+POST http://localhost:8091/__admin/mappings
+
+{
+  "request": {
+    "method": "GET",
+    "url": "/some/thing"
+  },
+  "response": {
+    "body": "Hello world!",
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "status": 200
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id" : "32a74980-166f-45f8-aeaf-b6837c9ae345",
+  "request" : {
+    "url" : "/some/thing",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "Hello world!",
+    "headers" : {
+      "Content-Type" : "text/plain"
+    }
+  },
+  "uuid" : "32a74980-166f-45f8-aeaf-b6837c9ae345",
+  "persistent" : true,
+  "insertionIndex" : 0
+}

@@ -1,0 +1,27 @@
+{
+    "mappings": [{
+            "priority": 10,
+            "request": {
+                "method": "ANY",
+                "urlPattern": "/example-1/error"
+            },
+            "response": {
+                "status": 404,
+                "jsonBody": { "status": "Error", "message": "Endpoint not found" },
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "ANY",
+                "urlPattern": "/example-1/test"
+            },
+            "response": {
+                "status": 200,
+                "jsonBody": { "status": "OK", "message": "Test passed" }
+            }
+        }
+    ]
+}
