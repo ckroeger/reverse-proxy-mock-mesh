@@ -1,2 +1,2 @@
-proxymanager/logs/proxy-host-*.log
-
+proxymanager/logs/*.log
+.idea/

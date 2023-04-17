@@ -6,16 +6,20 @@ services:
     ports:
       - '80:80'
       - '81:81'
-      - '443:443'
     volumes:
       - ./proxymanager:/data
   wiremock:
     image: 'wiremock/wiremock:2.35.0'
-    ports:
-      - "8091:8080"
     volumes:
       - ./wiremock:/home/wiremock
     command: [ --verbose ]
+  backend:
+    build:
+      dockerfile: backend/Dockerfile
+      args:
+        JAR_FILE: backend/target/*.jar
+
+
 #  nginx:
 #    image: 'nginx:alpine'
 #    ports:

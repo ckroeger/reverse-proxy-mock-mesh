@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        div {
+            border: aquamarine 1px dashed;
+            display: inline;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="output"></div>
+<div id="output2"></div>
+<input type="button" id="button" value="load time">
+<h1>Data from</h1>
+<textarea cols="80" rows="20" id="output3"></textarea>
+<input type="button" id="button2" value="load data">
+<script>
+    function getData(url, targetId) {
+        const ret = httpGet(url)
+        document.getElementById(targetId).innerHTML = ret;
+        return true;
+    }
+
+    function httpGet(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", theUrl, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
+
+    document.getElementById("button").addEventListener("click", ()=> getData("datetime","output2"));
+    document.getElementById("button2").addEventListener("click", ()=> getData("data","output3"));
+    window.setInterval(getData, 1000, "datetime","output");
+</script>
+</body>
+</html>
