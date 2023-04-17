@@ -20,7 +20,7 @@ public class Controller {
       this.getTarget = getTarget;
    }
 
-   private String getTarget;
+   private final String getTarget;
 
    private final HttpClient httpClient = HttpClient.newBuilder()
          .version(HttpClient.Version.HTTP_2)
