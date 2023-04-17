@@ -27,3 +27,8 @@ $ curl localhost/backend/data
 ```
 [http://localhost/backend/](http://localhost/backend/)
 ![](docs/Static_Content_from_Java-Backend.jpg)
+
+## Test Wiremock
+````shell
+$ curl localhost/api/example-1/test
+````
