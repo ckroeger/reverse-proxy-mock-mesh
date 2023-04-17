@@ -1,2 +1,3 @@
-proxymanager/logs/*.log
+*.log
 .idea/
+*.gz

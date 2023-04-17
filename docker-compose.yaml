@@ -19,10 +19,3 @@ services:
       args:
         JAR_FILE: backend/target/*.jar
 
-
-#  nginx:
-#    image: 'nginx:alpine'
-#    ports:
-#      - '90:8081'
-#    volumes:
-#      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
