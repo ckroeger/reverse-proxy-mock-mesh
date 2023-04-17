@@ -17,6 +17,8 @@ $ docker-compose up
 | User | admin@admin.com |
 | Pass | password123     |
 
+![](docs/Proxmanager_Configuration_For_Wiremock_and_Java_Backend.jpg)
+
 ## Test java backend
 ```shell
 $ curl localhost/backend/datetime
