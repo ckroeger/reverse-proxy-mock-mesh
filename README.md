@@ -17,7 +17,7 @@ $ docker-compose up
 | User | admin@admin.com |
 | Pass | password123     |
 
-![](docs/Proxmanager_Configuration_For_Wiremock_and_Java_Backend.jpg)
+![](docs/Proxmanager_Configuration_For_Wiremock_and_Java_Backend.png)
 
 ## Test java backend
 ```shell
