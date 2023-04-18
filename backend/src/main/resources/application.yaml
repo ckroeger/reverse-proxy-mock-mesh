@@ -1,1 +1,7 @@
 targetUrl: http://localhost:8080/datetime
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false

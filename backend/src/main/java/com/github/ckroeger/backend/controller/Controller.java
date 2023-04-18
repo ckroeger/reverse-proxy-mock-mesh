@@ -1,5 +1,7 @@
 package com.github.ckroeger.backend.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +22,7 @@ public class Controller {
       this.getTarget = getTarget;
    }
 
+   private final Logger logger = LoggerFactory.getLogger(Controller.class);
    private final String getTarget;
 
    private final HttpClient httpClient = HttpClient.newBuilder()
@@ -40,7 +43,7 @@ public class Controller {
 
 
    private String sendGet(String url) throws IOException, InterruptedException {
-
+      logger.info("Sending request to {}", url);
       HttpRequest request = HttpRequest.newBuilder()
             .GET()
             .uri(URI.create(url))
