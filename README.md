@@ -1,6 +1,8 @@
 # reverse-proxy-mock-mesh
 An example for mock-reverse-proxy scenario
 
+![](docs/catcher.png)
+
 # Run screnario
 ````shell
 $ cd backend
